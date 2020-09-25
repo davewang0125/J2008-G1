@@ -34111,7 +34111,7 @@ var client = __webpack_require__(/*! ./client */ "./src/main/js/client.js");
 var follow = __webpack_require__(/*! ./follow */ "./src/main/js/follow.js"); // function to hop multiple links by "rel"
 
 
-var root = '/api';
+var root = '/api/v2';
 
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
@@ -34125,7 +34125,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      employees: [],
+      users: [],
       attributes: [],
       pageSize: 2,
       links: {}
@@ -34146,7 +34146,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 
       follow(client, root, [// <1>
       {
-        rel: 'employees',
+        rel: 'v2',
         params: {
           size: pageSize
         }

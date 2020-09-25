@@ -1,0 +1,5 @@
+amazonProperties:
+  endpointUrl: https://s3.us-west-1.amazonaws.com
+  accessKey: AKIA4GC25EXF2Q3TO5S7
+  secretKey: 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
+  bucketName: java-202008-group1
